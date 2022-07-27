@@ -1,0 +1,122 @@
+.products {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 276px;
+  }
+}
+
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 119px;
+  }
+}
+
+.products__img {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 463px;
+  }
+}
+
+.products__title {
+  color: #1D1A27;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 0.96px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 44px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+}
+
+.products__description {
+  color: #6F6F70;
+  font-weight: normal;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    width: 481px;
+  }
+}
+
+.products__btn {
+  color: #262330;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+
+.products__section {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    height: 331px;
+    justify-content: center;
+    width: 480px;
+    padding-top: 114px;
+    padding-left: 70px;
+    position: relative;
+  }
+}
+
+.products__img-container {
+  position: relative;
+  margin-top: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+
+    &::after {
+      background-color: #242032;
+      content: "";
+      height: 706px;
+      left: 81.5%;
+      position: absolute;
+      bottom: -27%;
+      width: 240px;
+      z-index: -1;
+    }
+  }
+}
+
+.products__btn-container {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 118%;
+    left: 15%;
+  }
+}
+
+.products__btn--arrow {
+  display: none;
+  position: absolute;
+
+  @media (min-width: $desktop-width) {
+    font-size: 25px;
+    content: "";
+    display: block;
+    height: 10px;
+    left: 112%;
+    bottom: 55px;
+    width: 16px;
+  }
+}

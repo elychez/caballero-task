@@ -1,0 +1,34 @@
+.page-header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  background-color: #242032;
+  width: 90px;
+  height: 118px;
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    width: 170px;
+    height: 224px;
+    z-index: 5;
+  }
+}
+
+
+.page-header__logo {
+  background-color: #242032;
+
+  @media (min-width: $desktop-width) {
+    height: 64px;
+    padding-top: 4px;
+    width: 123px;
+  }
+}
+
+.page-header {
+  @media (min-width: $desktop-width) {
+    height: 240px;
+    margin-left: 85px;
+  }
+}

@@ -1,0 +1,93 @@
+.video {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 85px;;
+    margin-top: -157px;
+    margin-bottom: 0;
+  }
+}
+
+.video__container {
+  width: 377px;
+  height: auto;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    min-height: 564px;
+    min-width: 1355px;
+  }
+}
+
+.video__video {
+  object-fit: cover;
+  min-width: 377px;
+  height: auto;
+
+  @media(min-width: $desktop-width) {
+    width: 1355px;
+    height: 564px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+}
+
+.video__title {
+  color: #ffffff;
+  position: absolute;
+  z-index: 7;
+  top: 62%;
+  left: 3%;
+  width: 200px;
+  letter-spacing: 1.13px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    font-weight: 400;
+    left: 9%;
+    line-height: 65px;
+    top: 23%;
+    width: 33%;
+  }
+}
+
+.video__mute-btn {
+  background-image: url("../../../assets/eko-nams-audio-mute.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  content: "";
+  height: 30px;
+  left: 85%;
+  position: absolute;
+  top: 74%;
+  width: 43px;
+  z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    left: 9%;
+  }
+}
+
+.video__unmute-btn {
+  background-image: url("../../../assets/eko-nams-audio-on.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  content: "";
+  height: 30px;
+  left: 85%;
+  position: absolute;
+  top: 74.3%;
+  width: 43px;
+  z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    left: 9%;
+  }
+}

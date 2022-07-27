@@ -1,0 +1,115 @@
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 54px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+
+.site-list__link {
+  color: #292929;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex-grow: 0.8;
+}
+
+.site-list .site-list__item:nth-of-type(1) {
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    order: 0;
+  }
+}
+
+.site-list .site-list__item:nth-of-type(2) {
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    order: 1;
+  }
+}
+
+.site-list .site-list__item:nth-of-type(3) {
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    order: 2;
+  }
+}
+
+.site-list .site-list__item:nth-of-type(4) {
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    order: 4;
+  }
+}
+
+.site-list .site-list__item:nth-of-type(5) {
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    order: 3;
+  }
+}
+
+.site-list .site-list__item:nth-of-type(6) {
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    order: 5;
+  }
+}
+
+.site-list .site-list__item:nth-child(-n+4) {
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 5px;
+      border-left: 4.5px solid transparent;
+      border-right: 4.5px solid transparent;
+      border-top: 5px solid #292929;
+      right: 5%;
+      top: 0;
+    }
+  }
+}
+
+.site-list__item--open {
+  position: relative;
+}
+
+.site-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 39px;
+}
+
+
+.reverse-arrow {
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 5px;
+      border-left: 4.5px solid transparent;
+      border-right: 4.5px solid transparent;
+      border-top: 5px solid #292929;
+      right: 5%;
+      top: 0;
+      transform: rotate(180deg);
+    }
+  }
+}

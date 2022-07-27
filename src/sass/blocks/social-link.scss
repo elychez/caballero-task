@@ -1,0 +1,38 @@
+.social-link--fb {
+  &::before {
+    background-image: url("../../../assets/logo-fb-simple.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+  }
+}
+
+.social-link--linkedin {
+  &::before {
+    background-image: url("../../../assets/linkedin (2).svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+  }
+}
+
+.social-link--yt {
+  &::before {
+    background-image: url("../../../assets/logo-youtube.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+  }
+}

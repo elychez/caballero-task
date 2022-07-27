@@ -1,0 +1,40 @@
+.map__title {
+  text-align: center;
+  color: #242032;
+  font-weight: normal;
+
+  @media (min-width: $desktop-width) {
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.96px;
+  }
+}
+
+.map {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    height: 583px;
+    margin-bottom: 0;
+  }
+}
+
+.map__title-container {
+  @media (min-width: $desktop-width) {
+    margin-top: 105px;
+  }
+}
+
+.map__container {
+  background-image: url("../../../assets/pati-karte-bet-shadi-vajag-nosatailot-un-minimizet-google-maps.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: $desktop-width) {
+    width: 94%;
+    height: 490px;
+  }
+}
+

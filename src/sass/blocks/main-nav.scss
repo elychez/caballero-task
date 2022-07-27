@@ -1,0 +1,18 @@
+.main-nav__container {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    width: 665px;
+    margin-right: 136px;
+  }
+}
+
+.main-nav {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
