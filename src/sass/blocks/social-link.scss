@@ -1,6 +1,6 @@
 .social-link--fb {
   &::before {
-    background-image: url("../../../assets/logo-fb-simple.svg");
+    background-image: url("../../assets/images/logo-fb-simple.svg");
     background-repeat: no-repeat;
     display: inline-block;
     width: 10px;
@@ -13,7 +13,7 @@
 
 .social-link--linkedin {
   &::before {
-    background-image: url("../../../assets/linkedin (2).svg");
+    background-image: url("../../assets/images/linkedin (2).svg");
     background-repeat: no-repeat;
     display: inline-block;
     width: 14px;
@@ -26,7 +26,7 @@
 
 .social-link--yt {
   &::before {
-    background-image: url("../../../assets/logo-youtube.svg");
+    background-image: url("../../assets/images/logo-youtube.svg");
     background-repeat: no-repeat;
     display: inline-block;
     width: 16px;
