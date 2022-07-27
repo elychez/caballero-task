@@ -7,15 +7,14 @@ const CopyPlugin = require('copy-webpack-plugin');
 const path = require("path");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: path.resolve(__dirname, './src/index.js'),
     output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname, "build"),
-        publicPath: "/",
+        path: path.resolve(__dirname, './build'),
+        filename: 'bundle.js',
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, 'build'),
+            directory: path.join(__dirname, './build'),
         },
         compress: true,
         port: 9000,
@@ -37,6 +36,11 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(js)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -45,6 +49,9 @@ module.exports = {
                 ]
             },
         ]
+    },
+    resolve: {
+        extensions: ['*', '.js']
     },
     optimization: {
         minimize: true,
